@@ -1,0 +1,243 @@
+@media(min-width:600px) {
+
+    .container,
+    .container-fluid,
+    .container-lg,
+    .container-md,
+    .container-sm,
+    .container-xl,
+    .container-xxl {
+        max-width: 600px !important;
+    }
+}
+
+@media(max-height:860px) {
+    .Image-unscreen {
+        padding-bottom: 13px;
+        padding-top: 40px;
+    }
+}
+
+@media(max-height:800px) {
+    .onboarding-next-btn-skip {
+        position: unset;
+        margin-bottom: 20px;
+    }
+
+    .finger_print_button {
+        position: unset;
+        margin-bottom: 20px;
+    }
+
+    .finger-print-sec-btn {
+        padding-bottom: 0;
+    }
+
+    .onboarding-next-btn-new-payment {
+        position: unset;
+        margin-bottom: 20px;
+    }
+
+    .update-info-btn {
+        margin-top: 10px;
+    }
+}
+
+@media(max-height:780px) {
+    .lets_you_in_box3 {
+        top: 30px;
+    }
+
+    .finger-print-sec-btn2 {
+        position: unset;
+        margin-bottom: 20px;
+        margin-top: 35px;
+        padding-bottom: 0;
+    }
+
+
+}
+
+@media(max-height:710px) {
+    .try_again_button {
+        position: unset;
+        margin-bottom: 15px;
+    }
+
+    .go-to-home {
+        position: unset;
+        margin-bottom: 20px;
+    }
+
+    .footer-box-sign-up {
+        height: calc(100% - 47%);
+    }
+
+    .footer_sign_in {
+        height: calc(100% - 50%);
+    }
+
+    .onboarding-next-btn-plus2 {
+        position: unset;
+        margin-bottom: 20px;
+    }
+
+    .onboarding-next-btn {
+        position: unset;
+        margin-bottom: 20px;
+    }
+
+}
+
+@media(max-height:700px) {
+    .plus-subscription-main {
+        height: 100%;
+    }
+
+    .custom-slider-btn {
+        position: absolute;
+        right: 0;
+        bottom: 108px;
+    }
+
+    .onboarding-next-btn-Subscribe {
+        position: unset;
+        margin-bottom: 20px;
+    }
+
+    .until-canceled {
+        position: unset;
+    }
+}
+
+@media(max-height:650px) {
+    .lets_you_in_box4 {
+        top: -5px;
+    }
+
+    .lets_you_in_box2 {
+        top: 65px;
+    }
+
+    .onboarding-next-btn-slider {
+        position: unset;
+        margin-bottom: 20px;
+        bottom: 0;
+    }
+
+    .Onboarding-Screen-1-full {
+        position: relative;
+        height: 100%;
+    }
+
+}
+
+@media(max-height:568px) {
+    .icons_main {
+        gap: 16px;
+    }
+
+    .Allow_notification_btn {
+        position: unset;
+        margin-bottom: 20px;
+    }
+
+    .finger-print-sec-btn {
+        position: unset;
+        margin-top: 20px;
+        padding-bottom: 0;
+    }
+
+    .onboarding-next-btn-plus {
+        position: unset;
+        margin-bottom: 20px;
+    }
+
+    .footer-box-sign-up {
+        height: calc(100% - 40%);
+    }
+
+
+    .Amigo_img_main {
+        padding-top: 10px;
+    }
+}
+
+@media(max-width:390px) {
+    .payment-type {
+        padding: 8px 10px;
+    }
+
+    .card-text-america {
+        padding-left: 12px;
+    }
+}
+
+@media(max-width:360px) {
+    .media-icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    .congratulations {
+        font-size: 26px;
+        line-height: 40px;
+        padding: 10px 0;
+    }
+
+    .onboarding-next-btn-slider,
+    .Allow_notification_btn,
+    .onboarding-next-btn,
+    .finger_print_button,
+    .onboarding-next-btn-home {
+        max-width: 300px;
+    }
+}
+
+@media(max-width:320px) {
+
+    .print-skip-btn a,
+    .print-next-btn a {
+        width: 110px;
+    }
+
+    .finger-print-sec-btn-wrapp {
+        padding: 20px 16px;
+    }
+
+    .change-lan-sec,
+    .change-lan-sec-end {
+        padding: 10px 0px !important;
+        border-bottom: 2px solid var(--border-colors);
+    }
+
+    .change-lan-sec-start {
+        margin-top: 12px;
+    }
+
+    .hello-jessica {
+        font-size: 26px;
+    }
+
+    .conversation {
+        padding-bottom: 0;
+    }
+
+    .amigo-pluse-text {
+        font-size: 20px;
+    }
+
+    .otp-field {
+        gap: 7px;
+    }
+
+    .icons_main {
+        gap: 12px;
+    }
+}
+
+@media(max-width:319px) {
+    .icons_main {
+        gap: 6px;
+    }
+}

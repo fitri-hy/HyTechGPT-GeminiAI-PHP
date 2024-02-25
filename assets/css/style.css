@@ -1,0 +1,3800 @@
+/*------------------------------------------------------------------
+Project: Amigo GPT
+Author: The_Krishna       
+Last change: 01/02/2024  
+-------------------------------------------------------------------*/
+/*----------------Table of contents Start---------------------------
+1.Default CSS
+2.Splash Screen CSS
+3.Onboarding Screen CSS
+4.All Screen Page loader CSS
+5.Sticky Header CSS
+6.let-you-screen-in CSS
+7.Sign in CSS
+8.Sign Up CSS
+9.Verify-section-main CSS
+10.Notification Allow CSS
+11.Forget Password CSS
+12.Confirm OTP CSS
+13.Create New Password
+14.Personal Information CSS
+15.Personal Information Loader Screen CSS
+16.Finger Print Scanner Screen CSS
+17.Preferred Language Screen CSS
+18.Reason Screen CSS
+19.Amigo GPT HOME Screen CSS
+20.Amigo GPT Plus Subscription Screen CSS
+21.Payment Method screen
+22.Subscription Screen Css
+23.Thank You For Subscripation Screen Css
+24.Amigo Chat Screen Css
+25.The Side Navigation Menu Chat Screen Css
+26.Notification Screen Css
+27.Setting Screen Css
+28.Switch Button Dark Light Mode Css
+29.History Scrren Css
+30.Add New Card Screen Css
+31.Security Screen Css
+32.Marketing Preferences Screen Css
+33.Faq Screen
+34.Data & Privacy Screen CSS
+35.About Screen CSS
+36.Feedback Screen CSS
+37.Contact Us Screen CSS
+38.Friend Invite Screen CSS
+39.Delete or Deactivate Screen CSS
+40.Log Out Screen CSS
+---------Table of contents End-----------------------------------*/
+/************************ 1.Default CSS ***************************/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    height: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--primary-color);
+    padding-right: 0 !important;
+}
+
+@font-face {
+    font-family: "Satoshi";
+    src: url('../font/Satoshi-Medium.ttf');
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Poppins', sans-serif;
+}
+
+p {
+    font-family: "Satoshi";
+    font-weight: 500;
+}
+
+button {
+    border: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: #FFF;
+}
+
+:root {
+    --primary-color: #FFF;
+    --text-color: #0F0F0F;
+    --sub-text-color: #555;
+    --border-colors: #F5F5F5;
+    --apple-icon: brightness(0) saturate(100%) invert(0%) sepia(99%) saturate(5%) hue-rotate(317deg) brightness(103%) contrast(103%);
+    --sign-in-bg: #E4FFEE;
+    --cal-icon: brightness(0) saturate(100%) invert(0%) sepia(23%) saturate(2539%) hue-rotate(118deg) brightness(92%) contrast(89%);
+    --language-color: #FFF;
+    --visa-color: #172B85;
+    --box-color: #FFFFFF;
+    --border-colors-second: #F5F5F5;
+    --dots-img: brightness(0) saturate(100%) invert(100%) sepia(19%) saturate(5777%) hue-rotate(182deg) brightness(120%) contrast(88%);
+}
+
+.dark-mode {
+    --primary-color: #121212;
+    --text-color: #FFF;
+    --sub-text-color: #A0A0A0;
+    --border-colors: #1D1D1D;
+    --apple-icon: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(245deg) brightness(104%) contrast(104%);
+    --sign-in-bg: #1D1D1D;
+    --cal-icon: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(0%) hue-rotate(79deg) brightness(102%) contrast(104%);
+    --language-color: #0F0F0F;
+    --visa-color: #FFFF;
+    --box-color: #1D1D1D;
+    --border-colors-second: #121212;
+    --dots-img: brightness(0) saturate(100%) invert(10%) sepia(0%) saturate(2679%) hue-rotate(249deg) brightness(96%) contrast(95%);
+}
+
+/************************ 2.Splash Screen CSS ***************************/
+.splash-screen-logo {
+    display: block;
+    text-align: center;
+}
+
+.loader-mask,
+.loader-mask1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: var(--primary-color);
+    z-index: 99999;
+}
+
+.dots_pattern_img1 {
+    position: absolute;
+    top: 0;
+}
+
+.hekko {
+    filter: var(--dots-img);
+}
+
+.dots_pattern_img2 {
+    position: absolute;
+    bottom: 0;
+}
+
+#splash-screen-page {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.boarding-title {
+    margin-bottom: 40px;
+}
+
+.logo_img {
+    max-width: 100%;
+}
+
+.AmigoGPT {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 60px;
+    padding: 16px 0;
+}
+
+.meets {
+    color: var(--sub-text-color);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/************************ 3.Onboarding Screen CSS ***************************/
+.Image-unscreen {
+    padding-bottom: 70px;
+    padding-top: 71px;
+    max-width: 100%;
+}
+
+.welcome_to_amigo_text {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    padding-bottom: 15px;
+}
+
+.proin {
+    color: var(--sub-text-color);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.Image-unscreen_main {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.skip_btn-onboading {
+    color: #FFF;
+    text-align: right;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 0 16px;
+    padding-top: 30px;
+}
+
+.skip_btn-onboading a {
+    color: red;
+}
+
+.Onboarding-Screen-1-full {
+    position: relative;
+    height: 100vh;
+}
+
+.carousel-inner {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.custom-slider-dots {
+    width: 8px !important;
+    height: 8px !important;
+    border-radius: 8px !important;
+    border: none !important;
+}
+
+.custom-slider-btn .active {
+    width: 28px !important;
+    height: 8px !important;
+}
+
+.custom-slider-btn {
+    position: absolute;
+    right: 0;
+    bottom: 140px;
+    z-index: 2;
+    padding: 0;
+    margin: 0 !important;
+    list-style: none;
+    height: fit-content;
+}
+
+.onboarding-slider .carousel-indicators [data-bs-target] {
+    background: var(--text-color) !important;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.boarding-title h1 {
+    color: #FFF;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+}
+
+.bottom-fix-btn {
+    max-width: 343px;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFF;
+    border-radius: 12px;
+    background: var(--4, #00D061);
+    padding: 18px 0px;
+    cursor: pointer;
+}
+
+.onboarding-next-btn {
+    position: fixed;
+    bottom: 20px;
+}
+
+.onboarding-next-btn-slider {
+    position: fixed;
+    bottom: 20px;
+}
+
+/************************ 4.All Screen Page loader CSS ***************************/
+.loader {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: var(--primary-color);
+}
+
+.loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.shapes {
+    width: 44.8px;
+    height: 44.8px;
+    color: #2aeb84;
+    position: relative;
+    background: radial-gradient(11.2px, currentColor 94%, #0000);
+}
+
+.shapes:before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    background: radial-gradient(10.08px at bottom right, #0000 94%, currentColor) top left,
+        radial-gradient(10.08px at bottom left, #0000 94%, currentColor) top right,
+        radial-gradient(10.08px at top right, #0000 94%, currentColor) bottom left,
+        radial-gradient(10.08px at top left, #0000 94%, currentColor) bottom right;
+    background-size: 22.4px 22.4px;
+    background-repeat: no-repeat;
+    animation: shapes-77ngqcmd 1.5s infinite cubic-bezier(0.3, 1, 0, 1);
+}
+
+@keyframes shapes-77ngqcmd {
+    33% {
+        inset: -11.2px;
+        transform: rotate(0deg);
+    }
+
+    66% {
+        inset: -11.2px;
+        transform: rotate(90deg);
+    }
+
+    100% {
+        inset: 0;
+        transform: rotate(90deg);
+    }
+}
+
+/************************ 5.Sticky Header CSS ***************************/
+#top-header,
+#top-navbar {
+    max-width: 600px;
+}
+
+.fixed {
+    position: fixed;
+    z-index: 2;
+    -webkit-box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    top: 0%;
+    -webkit-box-shadow: 0 0 22px -4px rgb(0 0 0 / 17%);
+    box-shadow: 0 0 22px -4px rgb(0 0 0 / 17%);
+    -webkit-animation: fixedheader 600ms ease 0ms 1 forwards;
+    animation: fixedheader 600ms ease 0ms 1 forwards;
+}
+
+body::-webkit-scrollbar {
+    width: 0;
+    background: transparent;
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+}
+
+@keyframes fixedheader {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+#top-navbar.fixed {
+    background-color: #00D061;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+/************************ 6.let-you-screen-in CSS ***************************/
+.let-you-page-main {
+    position: relative;
+    background-color: var(--sign-in-bg);
+    height: 100vh;
+}
+
+.let-you-screen-main {
+    background-image: url('../images/let-you-screen-main-img.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    height: 375px;
+    position: relative;
+    background-color: #00D061;
+}
+
+body.dark-mode .let-you-screen-main {
+    background-image: url('../images/let-you-screen-main-img-dark.jpg');
+}
+
+.Amigo_img_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.footer_box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--sign-in-bg);
+}
+
+.Amigo_img {
+    background-color: var(--primary-color);
+    padding: 16px;
+    border-radius: 24px;
+    width: 120px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+}
+
+.back-btn {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.back-btn2 {
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.back-btn h1 {
+    color: var(--1, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding-left: 12px;
+}
+
+.lets_you_in_box {
+    padding: 32px 16px;
+    background-color: var(--primary-color);
+    border-radius: 24px;
+    z-index: 50;
+    position: absolute;
+    width: calc(100% - 24px);
+    transform: translate(0%, 50%);
+}
+
+#mobile:focus {
+    box-shadow: none !important;
+}
+
+.lets_you_in_box2 {
+    top: 85px;
+}
+
+.lets_you_in_box3 {
+    top: 45px;
+}
+
+.lets_you_in_box4 {
+    top: 10px;
+}
+
+.lets_you_in_text {
+    text-align: center;
+    color: var(--text-color);
+    font-size: 24px;
+    font-weight: 600;
+    font-style: normal;
+    line-height: 36px;
+}
+
+.icons_main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+    padding: 24px 0;
+}
+
+.icons_main2 {
+    padding-bottom: 0;
+}
+
+.icons {
+    border: 2px solid var(--border-colors);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.apple-main {
+    border: 2px solid var(--border-colors);
+    padding: 12px;
+    border-radius: 8px;
+}
+
+.apple {
+    filter: var(--apple-icon);
+}
+
+.or {
+    text-align: center;
+    position: relative;
+}
+
+.or p {
+    color: var(--sub-text-color);
+    text-align: center;
+    font-size: 18px;
+    line-height: 24px;
+    display: inline-block;
+    background-color: var(--primary-color);
+    padding: 0 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.or::before,
+.or::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    width: 50%;
+    height: 2px;
+    background-color: var(--border-colors);
+    z-index: 0;
+}
+
+.or::before {
+    left: 0;
+}
+
+.or::after {
+    right: 0;
+}
+
+.sign_with_pass_btn {
+    padding: 16px 0;
+    width: 100%;
+    background-color: #00D061;
+    border-radius: 12px;
+    color: var(--1, #FFF);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin-top: 24px;
+}
+
+#let-you-footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    max-width: 600px;
+    bottom: 0;
+    padding: 16px 0;
+    z-index: 40;
+}
+
+.block-footer p {
+    color: var(--sub-text-color);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 24px;
+    padding: 0 16px;
+}
+
+.block-footer a {
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+/************************ 7.Sign in CSS ***************************/
+#or-id {
+    margin-top: 24px;
+}
+
+.form-control {
+    border: none;
+    background: var(--border-colors);
+    height: 48px;
+    border-radius: 12px;
+    outline: none;
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.form-group {
+    padding-top: 24px;
+}
+
+.form-group input::placeholder {
+    color: var(--sub-text-color);
+}
+
+.selected-dial-code {
+    display: none !important;
+}
+
+.intl-tel-input .selected-flag .iti-arrow {
+    position: absolute;
+    top: 0;
+    margin-top: 0px;
+    right: 0px;
+    width: 0;
+    height: 0;
+    border-left: 0px solid transparent;
+    border-right: 0px solid transparent;
+    border-top: 0px solid #555;
+}
+
+.intl-tel-input .selected-flag .iti-arrow::before {
+    content: url(../images/angle-down.svg) !important;
+    position: absolute;
+    left: -34px;
+    top: 12px;
+    filter: var(--apple-icon);
+}
+
+.form-group input:focus {
+    outline: none;
+    background-color: var(--border-colors);
+    color: var(--text-color);
+}
+
+.intl-tel-input.separate-dial-code.allow-dropdown.iti-sdc-2 .selected-flag {
+    width: 70px;
+    border-radius: 12px 0 0 12px;
+    background: var(--border-colors);
+    font-size: 18px;
+}
+
+.input-group>.intl-tel-input.allow-dropdown {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    width: 1%;
+}
+
+.input-group>.intl-tel-input.allow-dropdown>.flag-container {
+    z-index: 4;
+}
+
+.intl-tel-input.separate-dial-code .selected-dial-code {
+    display: table-cell;
+    vertical-align: middle;
+    padding-left: 22px;
+}
+
+::placeholder {
+    color: var(--sub-text-color);
+}
+
+.ri-arrow-down-s-line {
+    display: none;
+}
+
+/************************ 8.Sign Up CSS ***************************/
+.person_detail_main {
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 16px 0;
+}
+
+input.person_name {
+    width: 100%;
+    background: var(--border-colors);
+    height: 48px;
+    border-radius: 0 12px 12px 0;
+    border: none;
+    outline: none;
+    color: var(--text-color);
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.ri-user-3-line {
+    font-size: 25px;
+    background: var(--border-colors);
+    height: 48px;
+    border-radius: 12px 0 0 12px;
+    padding: 7px 15px 0;
+    color: var(--text-color);
+}
+
+/************************ 9.Verify-section-main CSS ***************************/
+.verification-main {
+    background-image: url('../images/let-you-screen-main-img.jpg');
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-color: #00D061;
+    height: 300px;
+}
+
+body.dark-mode .verification-main {
+    background-image: url('../images/let-you-screen-main-img-dark.jpg');
+}
+
+.verify-section-main {
+    background-color: var(--primary-color);
+    padding: 16px 16px 0 16px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 24px 24px 0 0;
+    position: relative;
+    height: calc(100vh - 90px);
+    overflow-y: scroll;
+}
+
+.verify-img {
+    max-width: 100%;
+    padding-bottom: 16px;
+}
+
+.sub-text {
+    color: var(--sub-text-color);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    line-height: 24px;
+}
+
+.otp-field {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 24px 0 24px 0;
+}
+
+.otp-field input {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    text-align: center;
+    border: transparent;
+    background: var(--sign-in-bg);
+    outline: none;
+    transition: all 0.1s;
+    font-family: Satoshi;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 32px;
+    color: var(--text-color);
+}
+
+.otp-field input:focus {
+    border: 2px solid #00D061;
+    background: transparent;
+}
+
+.resend-otp {
+    padding-bottom: 35px;
+}
+
+/************************ 10.Notification Allow CSS ***************************/
+.notified {
+    padding-bottom: 20px;
+}
+
+.Allow_notification_btn {
+    position: fixed;
+    bottom: 20px;
+}
+
+/************************ 11.Forget Password CSS ***************************/
+.forget-pass {
+    padding-bottom: 24px;
+}
+
+.form {
+    max-width: 600px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.form-item {
+    position: relative;
+    margin-bottom: 15px
+}
+
+.form-item2 {
+    margin-bottom: 15px;
+}
+
+.form-item input {
+    display: block;
+    width: 100%;
+    height: 64px;
+    background: transparent;
+    border: solid 2px var(--border-colors);
+    transition: all .3s ease;
+    padding-left: 80px;
+    border-radius: 30px;
+    outline: none;
+    padding-top: 5px;
+    color: var(--text-color);
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.form-item input:focus {
+    border: 2px solid #00D061;
+}
+
+.form-item label {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 33%;
+    left: 70px;
+    padding: 0 10px;
+    color: var(--sub-text-color);
+    transition: all .3s ease;
+    font-family: Satoshi;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.form-item input:focus+label,
+.form-item input:valid+label {
+    font-size: 14px;
+    top: 3px;
+    color: #00D061 !important;
+}
+
+.form-item input:focus+label {
+    color: var(--sub-text-color);
+}
+
+.mobile-message-main {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 48px;
+    height: 48px;
+    background-color: var(--border-colors);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/************************ 12.Confirm OTP CSS ***************************/
+#countdowntimer {
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+#countdowntimer::after {
+    content: ' Sec';
+}
+
+/************************ 13.Create New Password CSS ***************************/
+.new_password_input label {
+    margin-bottom: 15px;
+    width: 100%;
+}
+
+.new_password_input {
+    width: 100%;
+}
+
+.new_password_input .form-item input {
+    font-size: 18px;
+    color: var(--text-color);
+    background: transparent;
+    height: 64px;
+    width: 100%;
+    border-radius: 12px;
+    outline: none;
+    border: none;
+    background-color: var(--border-colors);
+    padding: 8px 50px 0px 16px;
+}
+
+.form-item .info-person {
+    position: absolute;
+    cursor: text;
+    z-index: 2;
+    top: 33%;
+    left: 5px;
+    padding: 0 10px;
+    color: var(--sub-text-color);
+    transition: all .3s ease;
+    font-family: Satoshi;
+    font-weight: 500;
+    line-height: 20px;
+    font-size: 16px;
+}
+
+.sign-in-custom-input {
+    margin-bottom: 25px !important;
+}
+
+i#eye,
+i#eye1 {
+    font-size: 20px;
+    color: var(--sub-text-color);
+    position: absolute;
+    right: 16px;
+    top: 35%;
+    cursor: pointer;
+}
+
+/************************ 14.Personal Information CSS ***************************/
+.camera_main {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ri-camera-line {
+    position: absolute;
+    right: 0;
+    bottom: 22px;
+}
+
+.camera-bg {
+    fill: var(--text-color);
+    cursor: pointer;
+}
+
+.camera {
+    stroke: var(--primary-color);
+}
+
+.profile-pic {
+    width: 200px;
+    max-height: 200px;
+    display: inline-block;
+    max-width: 200px;
+    height: auto;
+    width: 100%;
+}
+
+.file-upload {
+    display: none;
+}
+
+.circle-img-girl {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 120px;
+    height: 120px;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+path.edit-info-calender {
+    stroke: var(--text-color);
+}
+
+input[type="date"] {
+    text-transform: uppercase;
+    font-size: 16px;
+}
+
+input[type=date]::-webkit-datetime-edit-text {
+    color: var(--sub-text-color);
+    font-size: 16px;
+}
+
+input[type=date]::-webkit-datetime-edit-month-field {
+    color: var(--sub-text-color);
+    font-size: 16px;
+}
+
+input[type=date]::-webkit-datetime-edit-day-field {
+    color: var(--sub-text-color);
+    font-size: 16px;
+}
+
+input[type=date]::-webkit-datetime-edit-year-field {
+    color: var(--sub-text-color);
+    font-size: 16px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    position: absolute;
+    right: 20px;
+    filter: var(--cal-icon);
+    font-size: 25px;
+}
+
+/************************ 15.Personal Information Loader Screen CSS ***************************/
+.sk-fading-circle {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sk-fading-circle .sk-circle {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.sk-fading-circle .sk-circle:before {
+    content: '';
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+    height: 15%;
+    background-color: var(--text-color);
+    border-radius: 100%;
+    -webkit-animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+    animation: sk-circleFadeDelay 1.2s infinite ease-in-out both;
+}
+
+@keyframes sk-circleFadeDelay {
+
+    0%,
+    39%,
+    100% {
+        opacity: 0;
+    }
+
+    40% {
+        opacity: 1;
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sk-fading-circle .sk-circle2 {
+    -webkit-transform: rotate(30deg);
+    -ms-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.sk-fading-circle .sk-circle3 {
+    -webkit-transform: rotate(60deg);
+    -ms-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+.sk-fading-circle .sk-circle4 {
+    -webkit-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.sk-fading-circle .sk-circle5 {
+    -webkit-transform: rotate(120deg);
+    -ms-transform: rotate(120deg);
+    transform: rotate(120deg);
+}
+
+.sk-fading-circle .sk-circle6 {
+    -webkit-transform: rotate(150deg);
+    -ms-transform: rotate(150deg);
+    transform: rotate(150deg);
+}
+
+.sk-fading-circle .sk-circle7 {
+    -webkit-transform: rotate(180deg);
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+
+.sk-fading-circle .sk-circle8 {
+    -webkit-transform: rotate(210deg);
+    -ms-transform: rotate(210deg);
+    transform: rotate(210deg);
+}
+
+.sk-fading-circle .sk-circle9 {
+    -webkit-transform: rotate(240deg);
+    -ms-transform: rotate(240deg);
+    transform: rotate(240deg);
+}
+
+.sk-fading-circle .sk-circle10 {
+    -webkit-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+}
+
+.sk-fading-circle .sk-circle11 {
+    -webkit-transform: rotate(300deg);
+    -ms-transform: rotate(300deg);
+    transform: rotate(300deg);
+}
+
+.sk-fading-circle .sk-circle12 {
+    -webkit-transform: rotate(330deg);
+    -ms-transform: rotate(330deg);
+    transform: rotate(330deg);
+}
+
+.sk-fading-circle .sk-circle2:before {
+    -webkit-animation-delay: -1.1s;
+    animation-delay: -1.1s;
+}
+
+.sk-fading-circle .sk-circle3:before {
+    -webkit-animation-delay: -1s;
+    animation-delay: -1s;
+}
+
+.sk-fading-circle .sk-circle4:before {
+    -webkit-animation-delay: -0.9s;
+    animation-delay: -0.9s;
+}
+
+.sk-fading-circle .sk-circle5:before {
+    -webkit-animation-delay: -0.8s;
+    animation-delay: -0.8s;
+}
+
+.sk-fading-circle .sk-circle6:before {
+    -webkit-animation-delay: -0.7s;
+    animation-delay: -0.7s;
+}
+
+.sk-fading-circle .sk-circle7:before {
+    -webkit-animation-delay: -0.6s;
+    animation-delay: -0.6s;
+}
+
+.sk-fading-circle .sk-circle8:before {
+    -webkit-animation-delay: -0.5s;
+    animation-delay: -0.5s;
+}
+
+.sk-fading-circle .sk-circle9:before {
+    -webkit-animation-delay: -0.4s;
+    animation-delay: -0.4s;
+}
+
+.sk-fading-circle .sk-circle10:before {
+    -webkit-animation-delay: -0.3s;
+    animation-delay: -0.3s;
+}
+
+.sk-fading-circle .sk-circle11:before {
+    -webkit-animation-delay: -0.2s;
+    animation-delay: -0.2s;
+}
+
+.sk-fading-circle .sk-circle12:before {
+    -webkit-animation-delay: -0.1s;
+    animation-delay: -0.1s;
+}
+
+.modal {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.56) 0%, rgba(0, 0, 0, 0.24) 100%);
+    backdrop-filter: blur(2px);
+    --bs-modal-bg: var(--primary-color);
+}
+
+.modal-content {
+    border-radius: 24px;
+}
+
+.loader2 {
+    text-align: center;
+    margin-top: 32px;
+}
+
+.finger-modal-content .modal-body {
+    padding: 24px 16px;
+}
+
+.finger-img-sec {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.congratulations {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 40px;
+    padding: 15px 0;
+}
+
+.few-sec {
+    color: var(--sub-text-color);
+    text-align: center;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+/************************ 16.Finger Print Scanner Screen CSS ***************************/
+.scan {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(..//images/border-1.png);
+    width: 220px;
+    height: 220px;
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.scan .fingerprint {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    background: url(../images/finger-print-img-black.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body.dark-mode .scan .fingerprint {
+    background: url(../images/finger-print-img-white.png);
+}
+
+.scan .fingerprint::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/finger-print-img-black.png);
+    background-size: 300px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    animation: animate 4s ease-in-out infinite;
+    filter: brightness(0) saturate(100%) invert(76%) sepia(45%) saturate(5258%) hue-rotate(100deg) brightness(92%) contrast(100%);
+}
+
+@keyframes animate {
+
+    0%,
+    100% {
+        height: 0%;
+    }
+
+    50% {
+        height: 100%;
+    }
+}
+
+.scan .fingerprint::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #00D061;
+    border-radius: 8px;
+    filter: drop-shadow(0 0 20px #00D061) drop-shadow(0 0 60px #00D061);
+    animation: animate_line 4s ease-in-out infinite;
+}
+
+@keyframes animate_line {
+
+    0%,
+    100% {
+        top: 0%;
+    }
+
+    50% {
+        top: 100%;
+    }
+}
+
+.scanner_main {
+    height: calc(100vh - 35vh);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.secure {
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.finger_print_button {
+    max-width: 343px;
+    position: fixed;
+    width: 100%;
+    bottom: 80px;
+}
+
+.onboarding-next-btn-skip {
+    position: fixed;
+    bottom: 20px;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFF;
+    border-radius: 12px;
+}
+
+.onboarding-next-btn-skip a {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+/************************ 17.Preferred Language Screen CSS ***************************/
+.main-text-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.facilitate {
+    text-align: left;
+}
+
+.select-lang-sec {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding-top: 32px;
+}
+
+.lang-sec input[type="radio"] {
+    display: none;
+}
+
+.lang-sec input[type="radio"]:checked+label {
+    background: var(--text-color);
+    border-radius: 8px;
+    color: var(--language-color);
+    border: 2px solid transparent;
+}
+
+label.custom-radio-sel-lang {
+    padding: 11px 16px;
+    border: 2px solid var(--border-colors);
+    border-radius: 8px;
+    cursor: pointer;
+    color: var(--text-color);
+    text-align: center;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.hey-jessica {
+    color: var(--text-color);
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 40px;
+    padding: 10px 0 16px 0;
+}
+
+.lang-sec input[type="checkbox"] {
+    display: none;
+}
+
+.lang-sec input[type="checkbox"]:checked+label {
+    background: var(--text-color);
+    border-radius: 8px;
+    color: var(--language-color);
+    border: 2px solid transparent;
+}
+
+.finger-print-sec-btn,
+.finger-print-sec-btn2 {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-bottom: 20px;
+}
+
+.finger-print-sec-btn-wrapp {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.print-skip-btn a {
+    width: 163px;
+    height: 48px;
+    border-radius: 8px;
+    background: var(--border-colors);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.print-next-btn a {
+    width: 163px;
+    height: 48px;
+    border-radius: 8px;
+    background: #00D061;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.interested {
+    padding-top: 10px;
+    text-align: left;
+}
+
+/************************ 18.Reason Screen CSS ***************************/
+.change-lan-sec,
+.change-lan-sec-end {
+    padding: 17px 0px !important;
+    border-bottom: 2px solid var(--border-colors);
+}
+
+.change-lan-sec-start {
+    border-top: 2px solid var(--border-colors);
+    margin-top: 24px;
+}
+
+.form-check-input.custom-input {
+    width: 18px !important;
+    height: 18px !important;
+    border-radius: 4px !important;
+    border: 2px solid #00D061;
+    float: right !important;
+    cursor: pointer;
+}
+
+.form-check-input.custom-input:focus {
+    box-shadow: none !important;
+}
+
+.form-check-label.custom-lable {
+    display: flex;
+    align-items: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+.currency-svg {
+    stroke: var(--sub-text-color);
+}
+
+.form-check-input:checked+.form-check-label .currency-svg {
+    stroke: var(--text-color);
+}
+
+.form-check-label {
+    color: var(--sub-text-color);
+}
+
+.form-check-input:checked+.form-check-label {
+    color: var(--text-color);
+}
+
+.form-check-input.custom-input:checked {
+    background: var(--language-color);
+    background-image: url(../images/lang-select.svg);
+    background-size: cover;
+    width: 20px !important;
+    height: 20px !important;
+    border: none;
+}
+
+/************************ 19.Amigo GPT HOME Screen CSS ***************************/
+.amigo-home-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.onboarding-next-btn-home {
+    position: fixed;
+    bottom: 20px;
+}
+
+.logo-home {
+    width: 36px;
+    filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7500%) hue-rotate(245deg) brightness(104%) contrast(104%);
+}
+
+.notification-bell-main {
+    display: flex;
+    gap: 12px;
+    position: relative;
+}
+
+.notification-bell {
+    position: relative;
+}
+
+.total_notification {
+    background-color: #FF484D;
+    position: absolute;
+    top: -5px;
+    right: 30px;
+    width: 15px;
+    height: 15px;
+    padding: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #FFF;
+}
+
+.hello-jessica {
+    color: var(--language-color);
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 40px;
+    padding-top: 36px;
+}
+
+.wave {
+    transform-origin: 70% 70%;
+    display: inline-block;
+    animation-name: wave-animation;
+    animation-duration: 2.5s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes wave-animation {
+    0% {
+        transform: rotate(0.0deg)
+    }
+
+    10% {
+        transform: rotate(14.0deg)
+    }
+
+    20% {
+        transform: rotate(-8.0deg)
+    }
+
+    30% {
+        transform: rotate(14.0deg)
+    }
+
+    40% {
+        transform: rotate(-4.0deg)
+    }
+
+    50% {
+        transform: rotate(10.0deg)
+    }
+
+    60% {
+        transform: rotate(0.0deg)
+    }
+
+    100% {
+        transform: rotate(0.0deg)
+    }
+}
+
+.have-fun {
+    color: var(--language-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    padding: 12px 0;
+}
+
+.conversation {
+    color: var(--language-color);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding-bottom: 12px;
+}
+
+.amigo-home-section-main {
+    background-color: var(--primary-color);
+    padding: 16px 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 24px 24px 0 0;
+    position: relative;
+    height: calc(100vh - 240px);
+}
+
+.amigo-box-main {
+    background-color: var(--sign-in-bg);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 12px;
+    margin-bottom: 20px;
+}
+
+.print-continue-btn-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.amigo-pluse-text {
+    color: var(--text-color);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+}
+
+.unlock {
+    color: var(--sub-text-color);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.plus-box-text-main {
+    padding: 12px 0 12px 12px;
+}
+
+.plus-robort {
+    border-radius: 0 0 12px 0;
+    max-width: 100%;
+}
+
+.upgrades-btn-main {
+    padding: 12px 15px;
+    background-color: var(--language-color);
+    border-radius: 8px;
+    color: #00D061;
+    margin-top: 16px;
+}
+
+.plus-robort-main {
+    height: 100%;
+    display: flex;
+}
+
+.backgroundOverlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: #000000;
+    opacity: .50;
+    filter: alpha(opacity=50);
+    -moz-opacity: .50;
+    z-index: 101;
+    display: none;
+}
+
+.delayedPopupWindow {
+    display: none;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    background-color: var(--primary-color);
+    z-index: 102;
+    padding: 16px;
+    margin: 0 auto;
+    border-radius: 24px 24px 0 0;
+}
+
+#btnClose {
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    text-align: right;
+    text-decoration: none;
+    color: #00D061;
+    font-size: 30px;
+}
+
+.formDescription {
+    text-align: center;
+}
+
+.formDescription img {
+    width: 100px;
+    height: 100px;
+}
+
+.formDescription h3 {
+    display: block;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--text-color);
+    padding: 16px 0;
+}
+
+.formDescription p {
+    margin-bottom: 15px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 20px;
+    color: var(--sub-text-color);
+    text-align: center;
+}
+
+.home-scrren-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-process {
+    font-size: 18px;
+    background-color: #00D061;
+    padding: 14px 25px;
+    border: none;
+    outline: none;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.btn-ring {
+    display: none;
+}
+
+.btn-ring:after {
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    margin-left: 8px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: ring 1.2s linear infinite;
+}
+
+@keyframes ring {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/************************ 20.Amigo GPT Plus Subscription Screen CSS ***************************/
+.premium-features-main {
+    display: flex;
+    gap: 16px;
+    padding-bottom: 25px;
+}
+
+.gpt-plus {
+    padding-bottom: 24px;
+}
+
+.premium-features-main h3 {
+    color: var(--text-color);
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    padding-bottom: 5px;
+}
+
+.access {
+    text-align: left;
+}
+
+.until-canceled {
+    padding-bottom: 24px;
+    position: fixed;
+    bottom: 80px;
+}
+
+.onboarding-next-btn-Subscribe {
+    position: fixed;
+    bottom: 20px;
+}
+
+/************************ 21.Payment Method screen ***************************/
+.checkout-modal-lbl-payment {
+    padding: 24px 0;
+    display: flex;
+    align-items: center;
+    padding-right: 30px;
+    cursor: pointer;
+}
+
+.bank-america-text {
+    color: var(--text-color);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.america-card-number {
+    color: var(--sub-text-color);
+    font-family: Satoshi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.payment-type {
+    border: 1px solid var(--border-colors);
+    padding: 8px 21px;
+    border-radius: 4px;
+}
+
+.visa {
+    fill: var(--visa-color);
+}
+
+.america-card-active {
+    color: #00D061;
+}
+
+.america-card-inactive {
+    color: #FF484D;
+}
+
+.card-text-america {
+    padding-left: 16px;
+}
+
+.custom-radio {
+    position: relative;
+    margin-bottom: 0;
+}
+
+.border-bottom {
+    border-bottom: 2px solid var(--border-colors) !important;
+}
+
+.form-check-input {
+    margin-top: 0;
+    background: transparent;
+}
+
+.form-check-input-radio:checked[type=radio] {
+    outline: 2px solid #FF484D;
+    outline-offset: 4px;
+    background: #FF484D !important;
+    width: 11px;
+    height: 11px;
+    margin-right: 5px;
+    border: 1px solid #FF484D !important;
+}
+
+.form-check .form-check-input-radio {
+    border: 2px solid #00D061;
+    background-color: transparent;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    outline: none;
+}
+
+.custom-radio input {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.new-card-link-btn-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.new-card-link-btn {
+    background-color: var(--sign-in-bg);
+    border: none;
+    text-align: center;
+    width: 100%;
+    padding: 18px 0;
+    color: #00D061;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 12px;
+    margin: 18px 0;
+}
+
+.onboarding-next-btn-new-payment {
+    position: fixed;
+    bottom: 20px;
+}
+
+.payment_method_bottom {
+    margin-bottom: 25px;
+}
+
+.apple-pay {
+    fill: var(--text-color);
+}
+
+/************************ 22.Subscription Screen Css ***************************/
+.subscription_payment-main {
+    background-color: var(--primary-color);
+    padding: 16px 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 24px 24px 0 0;
+    position: relative;
+    height: calc(100vh - 85px);
+}
+
+.subscription-amigo-logo-main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.subscription-amigo-logo {
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.subscription-text {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.subscription-date {
+    font-size: 14px;
+    padding-top: 8px;
+}
+
+.bank-card {
+    text-align: left;
+    font-size: 14px;
+}
+
+.twinty-five {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px;
+    padding: 32px 0;
+}
+
+.choose-card-main {
+    display: flex;
+    width: 100%;
+}
+
+.down-arrow-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 24px;
+}
+
+.fa-angle-down {
+    font-size: 24px;
+    color: var(--text-color);
+    float: right;
+}
+
+.promo-code {
+    padding-bottom: 10px;
+}
+
+.enter_code {
+    margin-bottom: 10px;
+}
+
+.pop-up-method {
+    font-size: 20px;
+    color: var(--text-color);
+}
+
+/************************ 23.Thank You For Subscripation Screen Css ***************************/
+.thank-you-subscriptions {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 32px;
+    padding-bottom: 12px;
+}
+
+.tellus {
+    padding-bottom: 20px;
+}
+
+.try_again_button {
+    max-width: 343px;
+    position: fixed;
+    width: 100%;
+    bottom: 90px;
+    z-index: 5;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    border-radius: 12px;
+    background: var(--sign-in-bg);
+    padding: 18px 0px;
+    cursor: pointer;
+}
+
+.try_again_button a {
+    color: #00D061;
+}
+
+.go-to-home {
+    max-width: 343px;
+    position: fixed;
+    width: 100%;
+    bottom: 20px;
+    z-index: 5;
+    text-align: center;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    color: #FFF;
+    border-radius: 12px;
+    background: var(--4, #00D061);
+    padding: 18px 0px;
+    cursor: pointer;
+}
+
+.alert-main {
+    background-color: var(--primary-color);
+    padding: 16px 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 24px 24px 0 0;
+    position: relative;
+    height: calc(100vh - 85px);
+}
+
+/************************ 24.Amigo Chat Screen Css ***************************/
+.amigo-chat-AI-main {
+    background-color: var(--primary-color);
+    padding: 16px 16px 0 16px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    border-radius: 24px 24px 0 0;
+    position: relative;
+    height: calc(100vh - 85px);
+}
+
+.chat {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    margin-bottom: 20px;
+    z-index: 10;
+    overflow: hidden;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.chat-title .avatar {
+    width: 64px;
+    height: 64px;
+}
+
+.chat-title .avatar img {
+    width: 100%;
+    height: auto;
+}
+
+.messages {
+    flex: 1 1 auto;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+.messages .messages-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 101%;
+    width: 100%;
+}
+
+.messages .message {
+    clear: both;
+    float: left;
+    padding: 9px 12px;
+    border-radius: 8px 8px 8px 0;
+    background: #E4FFEE;
+    position: relative;
+    border: none;
+    color: var(--2, #0F0F0F);
+    font-family: Satoshi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    margin: 15px 0 20px 0;
+}
+
+.messages .message .timestamp {
+    position: absolute;
+    bottom: -18px;
+    color: var(--sub-text-color);
+    right: 0;
+    font-family: Satoshi;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 12px;
+    width: 50px;
+}
+
+.mCSB_inside>.mCSB_container {
+    margin-right: 10px;
+}
+
+.messages .message .avatar {
+    position: absolute;
+    z-index: 1;
+    bottom: -15px;
+    left: -35px;
+    border-radius: 30px;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+}
+
+.messages .message .avatar img {
+    width: 100%;
+    height: auto;
+}
+
+.messages .message.message-personal {
+    float: right;
+    text-align: right;
+    background: #00D061;
+    border: none;
+    border-radius: 8px 8px 0 8px;
+    color: #FFF;
+    text-align: right;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+
+.message-box .message-input:focus {
+    outline: none !important;
+    border: 1px solid #00D061;
+    background-color: #E4FFEE;
+    color: #0F0F0F;
+    border-radius: 8px;
+}
+
+.messages .message.new {
+    transform: scale(0);
+    transform-origin: 0 0;
+    -webkit-animation: bounce 500ms linear both;
+    animation: bounce 500ms linear both;
+}
+
+.messages .message.loading span {
+    display: inline-block;
+    font-size: 0;
+    width: 20px;
+    height: 10px;
+    position: relative;
+}
+
+.messages .message.loading::before {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #888;
+    z-index: 2;
+    margin-top: 4px;
+    border: none;
+    animation: wave 1.3s linear infinite;
+}
+
+.messages .message.loading span::before {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    background: #888;
+    z-index: 2;
+    margin-top: 4px;
+    margin-left: 4px;
+    animation: wave 1.3s linear infinite;
+    animation-delay: -1.1s;
+}
+
+.messages .message.loading span::after {
+    position: relative;
+    content: "";
+    display: inline-block;
+    width: 5px;
+    height: 5px;
+    background: #888;
+    border-radius: 50%;
+    z-index: 2;
+    margin-top: 4px;
+    margin-left: 4px;
+    animation: wave 1.3s linear infinite;
+    animation-delay: -0.9s;
+}
+
+.message-box {
+    border: none;
+    position: relative;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.specker {
+    position: absolute;
+    right: 12px;
+    top: 12px;
+    cursor: pointer;
+    stroke: var(--sub-text-color);
+}
+
+.specker-file:focus {
+    stroke: #121212;
+}
+
+.chat-input {
+    display: flex;
+    align-items: stretch;
+    gap: 12px;
+    justify-content: center;
+}
+
+.send-icons {
+    stroke: white;
+    stroke-width: 2px;
+    stroke-linecap: round;
+}
+
+.message-box .message-input {
+    background: none;
+    border: 1px solid transparent;
+    outline: none !important;
+    resize: none;
+    font-size: 16px;
+    height: 48px;
+    margin: 0;
+    padding-right: 20px;
+    width: 100%;
+    color: var(--sub-text-color);
+    background: var(--border-colors);
+    border-radius: 8px;
+    padding: 10px 12px;
+}
+
+.message-box textarea:focus:-webkit-placeholder {
+    color: transparent;
+}
+
+.message-submit {
+    width: 48px;
+    height: 48px;
+    border-radius: 8px;
+    padding: 0;
+    background-color: var(--text-color);
+}
+
+.icon-send-message {
+    stroke: var(--language-color);
+}
+
+.mCSB_scrollTools {
+    margin: 1px -3px 1px 0;
+    opacity: 0;
+}
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+@-webkit-keyframes bounce {
+    0% {
+        transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    4.7% {
+        transform: matrix3d(0.45, 0, 0, 0, 0, 0.45, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    9.41% {
+        transform: matrix3d(0.883, 0, 0, 0, 0, 0.883, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    14.11% {
+        transform: matrix3d(1.141, 0, 0, 0, 0, 1.141, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    18.72% {
+        transform: matrix3d(1.212, 0, 0, 0, 0, 1.212, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    24.32% {
+        transform: matrix3d(1.151, 0, 0, 0, 0, 1.151, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    29.93% {
+        transform: matrix3d(1.048, 0, 0, 0, 0, 1.048, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    35.54% {
+        transform: matrix3d(0.979, 0, 0, 0, 0, 0.979, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    41.04% {
+        transform: matrix3d(0.961, 0, 0, 0, 0, 0.961, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    52.15% {
+        transform: matrix3d(0.991, 0, 0, 0, 0, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    63.26% {
+        transform: matrix3d(1.007, 0, 0, 0, 0, 1.007, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    85.49% {
+        transform: matrix3d(0.999, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    100% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+}
+
+@keyframes bounce {
+    0% {
+        transform: matrix3d(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    4.7% {
+        transform: matrix3d(0.45, 0, 0, 0, 0, 0.45, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    9.41% {
+        transform: matrix3d(0.883, 0, 0, 0, 0, 0.883, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    14.11% {
+        transform: matrix3d(1.141, 0, 0, 0, 0, 1.141, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    18.72% {
+        transform: matrix3d(1.212, 0, 0, 0, 0, 1.212, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    24.32% {
+        transform: matrix3d(1.151, 0, 0, 0, 0, 1.151, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    29.93% {
+        transform: matrix3d(1.048, 0, 0, 0, 0, 1.048, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    35.54% {
+        transform: matrix3d(0.979, 0, 0, 0, 0, 0.979, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    41.04% {
+        transform: matrix3d(0.961, 0, 0, 0, 0, 0.961, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    52.15% {
+        transform: matrix3d(0.991, 0, 0, 0, 0, 0.991, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    63.26% {
+        transform: matrix3d(1.007, 0, 0, 0, 0, 1.007, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    85.49% {
+        transform: matrix3d(0.999, 0, 0, 0, 0, 0.999, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+
+    100% {
+        transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
+    }
+}
+
+@-webkit-keyframes wave {
+
+    0%,
+    60%,
+    100% {
+        transform: initial;
+    }
+
+    30% {
+        transform: translateY(-15px);
+    }
+}
+
+@keyframes wave {
+
+    0%,
+    60%,
+    100% {
+        transform: initial;
+    }
+
+    30% {
+        transform: translateY(-15px);
+    }
+}
+
+.chat-menu {
+    display: flex;
+}
+
+/************************ 25.The Side Navigation Menu Chat Screen Css ***************************/
+.chat-sidenav-icon {
+    stroke: var(--text-color);
+}
+
+.chat-menu-svg {
+    margin-right: 8px;
+}
+
+#offcanvasRight {
+    height: 200px;
+    width: 170px;
+    margin-top: 70px;
+    margin-right: 16px;
+    padding: 0;
+    background-color: var(--box-color);
+    box-shadow: 0px 0px 23px -11px black;
+    border-radius: 12px;
+}
+
+#offcanvasRight .offcanvas-backdrop {
+    background: transparent;
+    backdrop-filter: blur(0px);
+    background-color: transparent;
+}
+
+#offcanvasRight .offcanvas-body {
+    padding: 0 12px;
+}
+
+.sidenav .offcanvas-backdrop.show {
+    opacity: 0;
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: var(--text-color);
+    display: block;
+    transition: 0.3s;
+    font-family: Poppins;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    padding: 12px 0;
+}
+
+.space {
+    border-bottom: 2px solid var(--border-colors-second);
+}
+
+.amigo-chat-menu-main {
+    padding-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.amigo-chat-menu-main h1 {
+    color: var(--1, #FFF);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding-left: 12px;
+}
+
+.chat-menu-img {
+    cursor: pointer;
+}
+
+.end-session {
+    padding: 18px 0;
+    border: none;
+    border-radius: 12px;
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.session-btn {
+    background: #00D061;
+    color: #fff;
+    margin-bottom: 12px;
+    margin-top: 32px;
+}
+
+.cancel-btn {
+    background: var(--sign-in-bg);
+    color: #00D061;
+}
+
+.session-btn-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/************************ 26.Notification Screen Css ***************************/
+.security-main {
+    margin-top: 12px;
+}
+
+.notification-security-box-sub {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.notification-security-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.security-update-text {
+    color: var(--text-color);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+    padding-bottom: 5px;
+}
+
+.today-text {
+    color: var(--sub-text-color);
+    font-size: 14px;
+    font-style: normal;
+    line-height: 18px;
+}
+
+.new-btn {
+    padding: 8px 12px;
+    background: #FF484D;
+    color: #FFFFFF;
+    border-radius: 4px;
+}
+
+.factor {
+    font-size: 12px;
+    padding: 12px 0;
+    border-bottom: 2px solid var(--border-colors);
+}
+
+/************************ 27.Setting Screen Css ***************************/
+.settings-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--border-colors);
+    margin-bottom: 24px;
+}
+
+.settings-main-sub {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.menu-girl-img {
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+}
+
+.smith {
+    color: var(--text-color);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.smith-email {
+    color: var(--sub-text-color);
+    font-family: Satoshi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.new-chat {
+    font-weight: 500;
+}
+
+.setting-opestion-main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.setting-opestion-space {
+    padding: 8px 0;
+    border-bottom: 2px solid var(--border-colors);
+}
+
+.setting-opestion-main-sub {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.fa-angle-right {
+    color: var(--text-color);
+}
+
+.offcanvas-body::-webkit-scrollbar {
+    width: 4px;
+}
+
+.offcanvas-body::-webkit-scrollbar-thumb {
+    background-color: var(--sub-text-color);
+    background-clip: content-box;
+}
+
+.offcanvas {
+    background: var(--language-color);
+}
+
+.offcanvas-header .btn-close {
+    margin-right: 0 !important;
+}
+
+/************************ 28.Switch Button Dark Light Mode Css ***************************/
+.switch {
+    position: relative;
+    right: 45px;
+}
+
+.switch .slider {
+    position: absolute;
+    height: 26px;
+    width: 45px;
+    border-radius: 30px;
+    background-color: transparent;
+    border: 2px solid var(--border-colors);
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 99;
+}
+
+.switch .slider:before {
+    position: absolute;
+    left: 2px;
+    bottom: 0;
+    height: 22px;
+    width: 22px;
+    content: "";
+    border-radius: 50%;
+    transition: 0.5s;
+    border-radius: 22px;
+    border: 0.5px solid var(--border-colors);
+    background: #FFF;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.05),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.08),
+        0px 3px 8px 0px rgba(0, 0, 0, 0.08);
+}
+
+#toggle {
+    opacity: 0;
+    touch-action: none;
+}
+
+#toggle:checked~.slider {
+    background-color: #00D061;
+}
+
+#toggle:checked~.slider:before {
+    background-color: transparent;
+    box-shadow: inset -7px -2px 0 0px #FFFF;
+    transform: translate(16px, 0px);
+    border: 2px solid transparent;
+}
+
+#toggle:checked~.slide-block {
+    left: 0;
+    border-bottom-right-radius: 0;
+    border-top-right-radius: 0;
+}
+
+.version {
+    color: var(--sub-text-color);
+    font-size: 16px;
+    font-style: normal;
+    line-height: 20px;
+    padding-left: 56px;
+}
+
+/************************ 29.History Scrren Css ***************************/
+.active-chats {
+    color: var(--text-color);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+
+.history-menu-img {
+    filter: var(--apple-icon);
+}
+
+.chat-history-text {
+    font-size: 12px;
+}
+
+.chat-history-text-main {
+    padding: 8px 0;
+}
+
+.ended-chats {
+    padding: 24px 0 0 0;
+}
+
+.history-bottom-btn {
+    position: fixed;
+    right: 10px;
+    bottom: 30px;
+}
+
+.history-bottom {
+    margin-bottom: 20px;
+}
+
+/************************ 30.Add New Card Screen Css ***************************/
+.onboarding-next-btn-plus {
+    position: fixed;
+    bottom: 20px;
+}
+
+.custom-radio .svg-edit {
+    position: absolute;
+    right: 16px;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+
+.visa-card-img {
+    max-width: 100%;
+}
+
+.no-spinners::-webkit-outer-spin-button,
+.no-spinners::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.custom-input-home3-form::placeholder {
+    color: white;
+}
+
+#ui-datepicker-div {
+    display: none;
+    background-color: #fff;
+    box-shadow: 0 0.125rem 0.5rem rgba(0, 0, 0, 0.1);
+    margin-top: 0.25rem;
+    border-radius: 0.5rem;
+    padding: 0.5rem;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.ui-datepicker-calendar thead th {
+    padding: 0.25rem 0;
+    text-align: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+    color: #78909C;
+}
+
+.ui-datepicker-calendar tbody td {
+    width: 2.5rem;
+    text-align: center;
+    padding: 0;
+}
+
+div#ui-datepicker-div {
+    z-index: 500 !important;
+}
+
+.ui-datepicker-calendar tbody td a {
+    display: block;
+    border-radius: 0.25rem;
+    line-height: 2rem;
+    transition: 0.3s all;
+    color: #546E7A;
+    font-size: 0.875rem;
+    text-decoration: none;
+}
+
+.ui-datepicker-calendar tbody td a:hover {
+    background: #00d06138;
+}
+
+.ui-datepicker-calendar tbody td a.ui-state-active {
+    background-color: #00D061;
+    color: white;
+}
+
+.ui-datepicker-header a.ui-corner-all {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    margin: 0.5rem;
+    border-radius: 0.25rem;
+    transition: 0.3s all;
+}
+
+.ui-datepicker-title {
+    text-align: center;
+    line-height: 32px;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+#new-card-inputs {
+    margin-top: 20px;
+}
+
+.date-number-cvv {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.form-check-input-radio:checked+.checkout-modal-lbl-payment .payment-type {
+    border-color: #FF484D;
+}
+
+.payment-type2 {
+    border: 1px solid var(--border-colors);
+    padding: 13px 0;
+    border-radius: 4px;
+    max-width: 75px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.custom-radio .connect-text {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    bottom: 0;
+    margin: auto;
+}
+
+.connect-text {
+    color: var(--4, #00D061);
+    text-align: right;
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.not-connect {
+    color: var(--4, #FF484D);
+}
+
+.edit-info {
+    font-size: 20px;
+    color: var(--sub-text-color);
+    position: absolute;
+    right: 16px;
+    top: 35%;
+    cursor: pointer;
+}
+
+.edit-info-svg {
+    stroke: var(--text-color);
+}
+
+.demo-visa {
+    background-image: url(../images/demo_visa_card.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    max-height: 200px;
+    height: 100%;
+    max-width: 343px;
+    width: 100%;
+    margin: 0 auto;
+    border-radius: 24px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.card-hidden-number {
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: "Satoshi";
+}
+
+.card-name-jessica {
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: "Satoshi";
+    text-transform: uppercase;
+    width: 100%;
+    max-width: 170px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.card-date-cvv {
+    color: #FFF;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 30px;
+    font-family: "Satoshi";
+}
+
+.card-name-jessica-main {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 25px;
+}
+
+.card-name-jessica-main-sub {
+    display: flex;
+    justify-content: space-around;
+    column-gap: 25px;
+}
+
+/************************ 31.Security Screen Css ***************************/
+.remember {
+    color: var(--text-color);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.check-box {
+    display: flex;
+}
+
+.swiches-toggle input[type="checkbox"] {
+    position: relative;
+    appearance: none;
+    width: 40px;
+    height: 24px;
+    background: var(--sign-in-bg);
+    border-radius: 50px;
+    cursor: pointer;
+    border: 2px solid var(--border-colors);
+    transition: 0.4s;
+}
+
+.swiches-toggle input:checked[type="checkbox"] {
+    background: #00D061;
+}
+
+.swiches-toggle input[type="checkbox"]::after {
+    position: absolute;
+    content: "";
+    width: 18px;
+    height: 18px;
+    top: 1px;
+    left: 0;
+    background: #fff;
+    border-radius: 50%;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.05), 0px 1px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 8px 0px rgba(0, 0, 0, 0.08);
+    transform: scale(1.1);
+    transition: 0.4s;
+}
+
+.swiches-toggle input:checked[type="checkbox"]::after {
+    left: 46%;
+}
+
+.swiches-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border-colors);
+}
+
+.security-bottom-btns {
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+
+/************************ 32.Marketing Preferences Screen Css ***************************/
+.relevant {
+    color: var(--sub-text-color);
+    font-family: Poppins;
+    padding-bottom: 24px;
+    border-bottom: 1px solid var(--border-colors);
+    padding-top: 16px;
+}
+
+.news-text {
+    color: var(--text-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+}
+
+.send-important {
+    color: var(--sub-text-color);
+}
+
+.will-notify {
+    color: var(--text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.currency-icon {
+    padding-right: 8px;
+}
+
+.email-me {
+    margin-bottom: 20px !important;
+}
+
+/************************ 33.Faq Screen ***************************/
+.boder-top1 {
+    border-bottom: 1px solid var(--border-colors);
+    padding-top: 24px;
+}
+
+.nested-accordion {
+    cursor: pointer;
+    position: relative;
+}
+
+.nested-accordion .comment {
+    color: var(--sub-text-color);
+    font-family: Satoshi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    padding: 8px 0;
+}
+
+.nested-accordion h3 {
+    color: var(--text-color);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.nested-accordion h3:before {
+    content: '\271B';
+    position: absolute;
+    right: 0;
+    color: var(--text-color);
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.nested-accordion h3.selected {
+    color: #00D061;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+}
+
+.nested-accordion h3.selected:before {
+    content: '\005F';
+    line-height: 3px;
+    font-size: 20px;
+    color: #00D061;
+}
+
+.faq-txt1.selected:before {
+    content: url('../images/angle-up.svg') !important;
+}
+
+.faq-txt1:before {
+    content: url('../images/angle-down.svg') !important;
+}
+
+.boder-top {
+    border-bottom: 1px solid var(--border-colors);
+    padding: 24px 0;
+}
+
+.faq-txt1 {
+    color: var(--text-color) !important;
+    font-family: Satoshi !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 24px !important;
+    padding: 8px 0;
+}
+
+.faq-txt1.selected {
+    color: #00D061 !important;
+    font-family: Satoshi !important;
+    font-size: 16px !important;
+    font-style: normal !important;
+    font-weight: 500 !important;
+    line-height: 24px !important;
+}
+
+/************************ 34.Data & Privacy Screen CSS ***************************/
+.privacy_manage {
+    color: var(--text-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.permission {
+    font-size: 16px;
+    padding-bottom: 8px;
+    font-weight: 500;
+}
+
+.keep {
+    color: var(--sub-text-color);
+    font-family: Satoshi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.permission-box {
+    border: 2px solid var(--border-colors);
+    padding: 16px;
+    border-radius: 12px;
+    background: var(--box-color);
+    margin-top: 16px;
+}
+
+.data {
+    padding-top: 24px;
+}
+
+.form-check-input-radio2 {
+    border: 2px solid var(--text-color) !important;
+}
+
+/************************ 35.About Screen CSS ***************************/
+.about_text_content {
+    padding: 10px 0 18px 0;
+    border-bottom: 2px solid var(--border-colors);
+}
+
+.about-content {
+    color: var(--sub-text-color);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding-bottom: 8px;
+}
+
+.follow_us {
+    color: var(--text-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+    margin: 16px 0;
+}
+
+.media-icon-main {
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    margin-bottom: 35px;
+}
+
+.media-icon-name {
+    color: var(--sub-text-color);
+    text-align: center;
+    font-size: 12px;
+    line-height: 16px;
+    padding-top: 12px;
+}
+
+/************************ 36.Feedback Screen CSS ***************************/
+.feedback-sec-txt {
+    border-radius: 8px;
+    background: var(--border-colors);
+    padding: 16px;
+    display: flex;
+    border: none;
+    margin-top: 8px;
+    width: 100%;
+    font-family: Satoshi;
+    color: var(--sub-text-color);
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    outline: none;
+}
+
+label.feedback-lbl {
+    color: var(--text-color);
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.feedback-tp:focus-visible {
+    outline-width: 0 !important;
+}
+
+.menupage1-form-custom {
+    width: 100%;
+    border: navajowhite;
+    color: #707070;
+    font-family: Lato;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    background: #F0F0F0;
+    border-radius: 12px;
+    margin-top: 8px;
+}
+
+.feedback-tp {
+    margin-top: 8px;
+    margin-bottom: 12px;
+    color: var(--sub-text-color);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    width: 100%;
+    resize: none;
+    height: 135px;
+    border: none;
+    padding: 16px;
+    background: var(--border-colors);
+    border-radius: 12px;
+}
+
+.select-dropdown {
+    position: relative;
+    width: 100%;
+    background: var(--border-colors);
+    padding: 16px;
+    background: var(--border-colors);
+    color: var(--sub-text-color);
+    font-family: Satoshi;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    border-radius: 12px;
+    outline: none;
+    margin-top: 8px;
+}
+
+.select-dropdown__button .zmdi-chevron-down {
+    position: absolute;
+    right: 10px;
+    top: 12px;
+}
+
+.select-dropdown__list {
+    position: absolute;
+    display: block;
+    left: 0;
+    right: 0;
+    max-height: 300px;
+    overflow: auto;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    opacity: 0;
+    pointer-events: none;
+    transform-origin: top left;
+    transform: scale(1, 0);
+    transition: all ease-in-out 0.3s;
+    z-index: 2;
+}
+
+.select-dropdown__list.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1, 1);
+    border: 1px solid var(--border-colors);
+    border-radius: 8px;
+    box-shadow: 0px 3px 1px 0px rgba(0, 0, 0, 0.05), 0px 1px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 8px 0px rgba(0, 0, 0, 0.08);
+}
+
+.select-dropdown__list-item {
+    display: block;
+    list-style-type: none;
+    padding: 10px 15px;
+    background: var(--box-color);
+    border-top: 1px solid #FFF;
+    font-size: 15px;
+    line-height: 1.4;
+    font-family: Satoshi;
+    cursor: pointer;
+    color: var(--sub-text-color);
+    transition: all ease-in-out 0.3s;
+}
+
+.fa-angle-down {
+    color: var(--text-color);
+}
+
+.feedback-text-spacer {
+    padding-top: 20px;
+}
+
+#feedback-screen {
+    margin-bottom: 20px;
+}
+
+/************************ 37.Contact Us Screen CSS ***************************/
+.contact-us-img {
+    max-width: 343px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.contact-us-text-main {
+    color: var(--text-color);
+    text-align: center;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 36px;
+    padding-bottom: 12px;
+    padding-top: 24px;
+}
+
+.trouble {
+    color: var(--sub-text-color);
+    text-align: center;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    padding-bottom: 24px;
+}
+
+.contact-us-text {
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    background: var(--sign-in-bg);
+    padding: 12px;
+    margin-bottom: 10px;
+}
+
+.contact-us-text a {
+    color: var(--text-color);
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.contact-icon {
+    padding-right: 12px;
+}
+
+/************************ 38.Friend Invite Screen CSS ***************************/
+.friend-name {
+    color: var(--text-color);
+    font-family: Satoshi;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
+}
+
+.friend-no {
+    font-family: Satoshi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+    margin-top: 8px;
+}
+
+.friend-no a {
+    color: var(--sub-text-color);
+}
+
+.invite-img img {
+    border-radius: 50px;
+}
+
+.invite-friend-wrapper {
+    display: flex;
+    align-items: center;
+    margin-bottom: 24px;
+}
+
+.invite-img {
+    margin-right: 16px;
+}
+
+.custom-radio-sel-friend {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 61px;
+    height: 34px;
+    border-radius: 4px;
+    border: 2px solid var(--text-color);
+    cursor: pointer;
+    color: var(--text-color);
+    text-align: center;
+    font-family: Lato;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+.friend-select input[type="checkbox"]:checked+label {
+    border-radius: 4px;
+    background: var(--text-color);
+    color: var(--language-color);
+    border: 2px solid transparent;
+}
+
+.friend-select input {
+    display: none;
+}
+
+.friend-invite {
+    margin-left: auto;
+}
+
+/************************ 39.Delete or Deactivate Screen CSS ***************************/
+.leave-text {
+    color: var(--sub-text-color);
+    text-align: center;
+    font-family: Satoshi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    padding-bottom: 24px;
+    border-bottom: 2px solid var(--border-colors);
+}
+
+.permission-box2 {
+    margin-top: 24px;
+}
+
+.deactivate_your_account {
+    text-align: left;
+    padding-top: 16px;
+    padding-bottom: 12px;
+    border-bottom: none;
+}
+
+.deactivate-list li {
+    color: var(--sub-text-color);
+    font-family: Satoshi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.deactivate-list {
+    margin-left: 20px;
+}
+
+.leaving-box {
+    padding: 16px 0;
+    border-bottom: 1px solid var(--border-colors);
+}
+
+.tapping {
+    color: var(--sub-text-color);
+    font-family: Satoshi;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    padding-top: 25px;
+    margin-bottom: 35px;
+}
+
+.jesssmi {
+    color: var(--text-color);
+}
+
+.permission-box-bottom {
+    margin-bottom: 20px;
+}
+
+.onboarding-next-btn-plus2 {
+    position: fixed;
+    bottom: 20px;
+}
+
+/************************ 40.Log Out Screen CSS ***************************/
+.offcanvas-backdrop {
+    background: linear-gradient(180deg, rgba(18, 18, 18, 0.56) 0%, rgba(18, 18, 18, 0.24) 100%);
+    backdrop-filter: blur(2px);
+}
+
+button.text-reset {
+    background: transparent;
+    font-size: 25px;
+    color: var(--text-color) !important;
+    padding: 0;
+}
+
+.offcanvas-title {
+    color: var(--text-color);
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+}
+
+.offcanvas.offcanvas-bottom {
+    border-radius: 24px 24px 0 0;
+    padding: 12px 16px 30px 16px;
+    height: 270px;
+}
+
+.logout-text-pop {
+    color: var(--text-color);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    padding-bottom: 16px;
+}
+
+.offcanvas.offcanvas-bottom .offcanvas-header {
+    padding: 0;
+    cursor: pointer;
+}
+
+.offcanvas.offcanvas-bottom .offcanvas-body small {
+    padding: 0;
+}
+
+.sure-logout {
+    color: var(--sub-text-color);
+    text-align: center;
+    font-family: Satoshi;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding-bottom: 24px;
+}
+
+.logout-button-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+}
+
+.logout-cancel {
+    color: var(--4, #00D061);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    padding: 18px 30px;
+    border-radius: 12px;
+    background-color: var(--sign-in-bg);
+}
+
+.yes-logot {
+    background-color: #00D061;
+    color: #FFFFFF;
+    padding: 18px 20px;
+}
