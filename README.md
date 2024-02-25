@@ -14,7 +14,7 @@ $DIR_PATH = "Change with your path directory";
   <li>Set Apikey -> views/chat.php</li>
   <pre>
 Line: 67
-<input type="password" id="apiKeyInput" value="xxxxxxxxxxxxxxxxxxx" placeholder="Masukan Apikey Gemini...">
+value="xxxxxxxxxxxxxxxxxxx"
   </pre>
 </ul>
 
