@@ -27,7 +27,6 @@ value="xxxxxxxxxxxxxxxxxxx"
 <h2>Testing</h2>
 <ul>
   <li>PHP 7.4+</li>
-  <li>Login -> Get Api Key -> Create Apikey -> Copy Apikey</li>
 </ul>
 
 <h2>Using Framework</h2>
