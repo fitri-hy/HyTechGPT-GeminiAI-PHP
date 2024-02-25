@@ -1,9 +1,7 @@
 <?php
-    // Define your location project directory in htdocs (EX THE FULL PATH: D:\xampp\htdocs\x-kang\simple-routing-with-php)
     $DIR_PATH = "";
     $LINK = $DIR_PATH;
 
-    // For get URL PATH
     $request = $_SERVER['REQUEST_URI'];
 
     switch ($request) {
